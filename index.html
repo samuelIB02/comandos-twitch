@@ -1,40 +1,89 @@
-
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
+
 <meta charset="UTF-8">
-<title>Comandos de SamuStorm</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Comandos | SamuStorm</title>
 
 <style>
 
 body{
+    margin:0;
+    background:#0e0e10;
+    color:white;
+    font-family:Arial,Helvetica,sans-serif;
+}
 
-background:#18181b;
-
-color:white;
-
-font-family:Arial;
-
-padding:40px;
-
+header{
+    background:#9146FF;
+    padding:35px;
+    text-align:center;
 }
 
 h1{
+    margin:0;
+    font-size:42px;
+}
 
-color:#9147ff;
+.sub{
+    margin-top:10px;
+    color:#ddd;
+}
 
+.container{
+    max-width:1100px;
+    margin:auto;
+    padding:40px 20px;
+}
+
+h2{
+    color:#9146FF;
+    border-bottom:2px solid #9146FF;
+    padding-bottom:8px;
+    margin-top:45px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:#18181b;
+    border-radius:12px;
+    padding:18px;
+    transition:.2s;
+}
+
+.card:hover{
+    transform:scale(1.03);
+    background:#232328;
 }
 
 .command{
+    color:#b983ff;
+    font-size:22px;
+    font-weight:bold;
+}
 
-background:#2b2b31;
+.desc{
+    margin-top:10px;
+    color:#cfcfcf;
+}
 
-padding:15px;
+footer{
+    text-align:center;
+    padding:30px;
+    color:#888;
+}
 
-margin:10px;
-
-border-radius:10px;
-
+a{
+    color:#66b3ff;
 }
 
 </style>
@@ -43,39 +92,183 @@ border-radius:10px;
 
 <body>
 
-<h1>🎮 Comandos del canal</h1>
+<header>
 
-<div class="command">
+<h1>🎮 Comandos de SamuStorm</h1>
 
-<b>!memide</b>
+<p class="sub">¡Prueba estos comandos en el chat de Twitch!</p>
 
-<p>Mide el tamaño del usuario 😏</p>
+</header>
+
+<div class="container">
+
+<h2>🎲 Diversión</h2>
+
+<div class="grid">
+
+<div class="card">
+<div class="command">!memide</div>
+<div class="desc">Mide el tamaño de cualquier usuario 😏</div>
+</div>
+
+<div class="card">
+<div class="command">!iq</div>
+<div class="desc">Descubre tu IQ.</div>
+</div>
+
+<div class="card">
+<div class="command">!gay</div>
+<div class="desc">Calcula tu porcentaje gay 🌈</div>
+</div>
+
+<div class="card">
+<div class="command">!ship @usuario</div>
+<div class="desc">Comprueba la compatibilidad entre dos personas ❤️</div>
+</div>
+
+<div class="card">
+<div class="command">!duel @usuario</div>
+<div class="desc">Reta a otro espectador a un duelo.</div>
+</div>
+
+<div class="card">
+<div class="command">!accept</div>
+<div class="desc">Acepta un duelo.</div>
+</div>
+
+<div class="card">
+<div class="command">!deny</div>
+<div class="desc">Rechaza un duelo.</div>
+</div>
+
+<div class="card">
+<div class="command">!cancelduel</div>
+<div class="desc">Cancela un duelo pendiente.</div>
+</div>
+
+<div class="card">
+<div class="command">!roulette</div>
+<div class="desc">Juega a la ruleta de la suerte.</div>
+</div>
+
+<div class="card">
+<div class="command">!quote</div>
+<div class="desc">Muestra una cita aleatoria.</div>
+</div>
+
+<div class="card">
+<div class="command">!vanish</div>
+<div class="desc">Desaparece en una nube de humo 💨</div>
+</div>
 
 </div>
 
-<div class="command">
+<h2>💰 Economía</h2>
 
-<b>!iq</b>
+<div class="grid">
 
-<p>Calcula tu IQ.</p>
+<div class="card">
+<div class="command">!points</div>
+<div class="desc">Consulta tus puntos.</div>
+</div>
+
+<div class="card">
+<div class="command">!puntos</div>
+<div class="desc">Consulta tus puntos.</div>
+</div>
+
+<div class="card">
+<div class="command">!leaderboard</div>
+<div class="desc">Ranking de puntos.</div>
+</div>
+
+<div class="card">
+<div class="command">!top</div>
+<div class="desc">Muestra el top del canal.</div>
+</div>
+
+<div class="card">
+<div class="command">!bet</div>
+<div class="desc">Apuesta tus puntos.</div>
+</div>
+
+<div class="card">
+<div class="command">!redeem</div>
+<div class="desc">Canjea objetos con puntos.</div>
+</div>
+
+<div class="card">
+<div class="command">!store</div>
+<div class="desc">Ver la tienda de recompensas.</div>
+</div>
 
 </div>
 
-<div class="command">
+<h2>📊 Estadísticas</h2>
 
-<b>!gay</b>
+<div class="grid">
 
-<p>Descubre el porcentaje gay.</p>
+<div class="card">
+<div class="command">!watchtime</div>
+<div class="desc">Tiempo viendo el canal.</div>
+</div>
+
+<div class="card">
+<div class="command">!followage</div>
+<div class="desc">Tiempo siguiendo el canal.</div>
+</div>
+
+<div class="card">
+<div class="command">!accountage</div>
+<div class="desc">Edad de la cuenta de Twitch.</div>
+</div>
+
+<div class="card">
+<div class="command">!uptime</div>
+<div class="desc">Tiempo que lleva el directo.</div>
+</div>
+
+<div class="card">
+<div class="command">!chatstats</div>
+<div class="desc">Estadísticas del chat.</div>
+</div>
 
 </div>
 
-<div class="command">
+<h2>👥 Comunidad</h2>
 
-<b>!ship @usuario</b>
+<div class="grid">
 
-<p>Calcula la compatibilidad entre dos usuarios.</p>
+<div class="card">
+<div class="command">!discord</div>
+<div class="desc">
+<a href="https://discord.gg/J8tar5e4WZ" target="_blank">Unirse al Discord</a>
+</div>
+</div>
+
+<div class="card">
+<div class="command">!youtube</div>
+<div class="desc">
+<a href="https://www.youtube.com/@samustorm23" target="_blank">Canal de YouTube</a>
+</div>
+</div>
+
+<div class="card">
+<div class="command">!tiktok</div>
+<div class="desc">
+<a href="https://www.tiktok.com/@samustorm_" target="_blank">Perfil de TikTok</a>
+</div>
+</div>
 
 </div>
+
+</div>
+
+<footer>
+
+Creado para la comunidad de SamuStorm 💜
+
+</footer>
 
 </body>
 
